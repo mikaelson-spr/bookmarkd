@@ -5,6 +5,9 @@
       location = "group:Bookmarkd.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Vendor/SPR/SPRingboard/SPRingboard.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
