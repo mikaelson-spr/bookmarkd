@@ -58,7 +58,7 @@ fileprivate let sharedPrivateQueue = DispatchQueue(label: "sprcore.deferred.shar
 ///
 ///         return deferred
 ///     }
-public class Deferred<T>: Future<T> {
+public final class Deferred<T>: Future<T> {
     
     private struct Subscriber {
         internal let queue: DispatchQueue

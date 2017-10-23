@@ -6,5 +6,7 @@ target 'Bookmarkd' do
   use_frameworks!
 
   # Pods for Bookmarkd
+  pod 'Alamofire', '~> 4.5'
+  pod 'SwiftyJSON-3.1.1', '~> 3.1'
 
 end

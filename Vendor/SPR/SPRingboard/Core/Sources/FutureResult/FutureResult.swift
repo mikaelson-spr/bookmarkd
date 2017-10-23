@@ -59,6 +59,13 @@ public class FutureResult<SuccessValue> {
         case unfilled
     }
     
+    /// Public initializer for subclasses to call. By default, the initializer
+    /// would be `internal`.
+    ///
+    /// In _The Swift Programming Language (Swift 4)_ book, see Access Control
+    /// > Initializers > Default Initializers for more information.
+    public init() { }
+    
     /// Run the provided result handler when the receiver is filled. If the 
     /// receiver has been filled, the result handler will be dispatched 
     /// immediately.

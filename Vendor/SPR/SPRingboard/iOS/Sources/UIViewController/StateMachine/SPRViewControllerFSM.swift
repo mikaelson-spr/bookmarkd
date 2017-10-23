@@ -51,6 +51,12 @@ public final class SPRViewControllerFSM {
     
     public weak var delegate: SPRViewControllerFSMDelegate? = nil
     
+    /// Public initializer. By default, the initializer would be `internal`.
+    ///
+    /// In _The Swift Programming Language (Swift 4)_ book, see Access Control
+    /// > Initializers > Default Initializers for more information.
+    public init() { }
+    
     public func viewDidLoad() {
         self.queue.sync {
             switch self.state {

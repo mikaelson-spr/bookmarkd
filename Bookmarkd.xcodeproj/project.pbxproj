@@ -12,21 +12,46 @@
 		8A1164481F7C4073004D387B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1164461F7C4073004D387B /* Main.storyboard */; };
 		8A11644A1F7C4073004D387B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1164491F7C4073004D387B /* Assets.xcassets */; };
 		8A11644D1F7C4073004D387B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A11644B1F7C4073004D387B /* LaunchScreen.storyboard */; };
-		8A1164551F7C4121004D387B /* SPRingboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1164541F7C4121004D387B /* SPRingboard.framework */; };
-		8A1164561F7C4121004D387B /* SPRingboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1164541F7C4121004D387B /* SPRingboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A1274FA1F857E63009CB042 /* AddBookmarkEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1274F91F857E63009CB042 /* AddBookmarkEditVC.swift */; };
+		8A1CC1851F85702E00B14129 /* AddBookmarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CC1841F85702E00B14129 /* AddBookmarkVC.swift */; };
+		8A1CC1871F85714F00B14129 /* AddBookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CC1861F85714F00B14129 /* AddBookmarkCell.swift */; };
+		8A4357301F82990000A44624 /* AuthenticationDVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A43572F1F82990000A44624 /* AuthenticationDVO.swift */; };
+		8A4357331F8299FB00A44624 /* AuthenticationVVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4357321F8299FB00A44624 /* AuthenticationVVO.swift */; };
+		8A4357361F829AA100A44624 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4357351F829AA100A44624 /* Credentials.swift */; };
+		8A55D0401F87DCCF007C081D /* UpdateBookmarkCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A55D03F1F87DCCF007C081D /* UpdateBookmarkCommand.swift */; };
+		8A55D0421F87DE33007C081D /* UpdateBookmarkDVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A55D0411F87DE33007C081D /* UpdateBookmarkDVO.swift */; };
 		8A5D23F51F7D4040000E8338 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D23F41F7D4040000E8338 /* LoginVC.swift */; };
 		8A5D23F81F7D408E000E8338 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5D23F71F7D408E000E8338 /* Login.storyboard */; };
+		8A6B737E1F82A76C00D83F3A /* Bookmarks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6B737D1F82A76C00D83F3A /* Bookmarks.storyboard */; };
+		8A6B73801F82E1E300D83F3A /* FetchBookmarksCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B737F1F82E1E300D83F3A /* FetchBookmarksCommand.swift */; };
+		8A6B73821F82E30100D83F3A /* BookmarksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B73811F82E30100D83F3A /* BookmarksVC.swift */; };
+		8A8291581F87DF5C00EAA523 /* UpdateBookmarkVVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8291571F87DF5C00EAA523 /* UpdateBookmarkVVO.swift */; };
+		8A9B4E541F7E9EB700F48435 /* BookmarkdClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B4E531F7E9EB700F48435 /* BookmarkdClient.swift */; };
+		8A9B4E561F7EADAE00F48435 /* SPRingboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9B4E551F7EADAE00F48435 /* SPRingboard.framework */; };
+		8A9B4E571F7EADAE00F48435 /* SPRingboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9B4E551F7EADAE00F48435 /* SPRingboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8AC128EF1F7D540C003BF8E4 /* SignInCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC128EE1F7D540C003BF8E4 /* SignInCommand.swift */; };
+		8AC720111F867B84006666FE /* AddBookmarkCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC720101F867B84006666FE /* AddBookmarkCommand.swift */; };
+		8AC720131F867C63006666FE /* AddBookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC720121F867C63006666FE /* AddBookmark.swift */; };
+		8ACA019E1F87E6650025C5EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACA019D1F87E6650025C5EA /* Constants.swift */; };
+		8AD10D9D1F82E60E0072BD47 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD10D9C1F82E60E0072BD47 /* Authentication.swift */; };
+		8AD10D9F1F83D4E20072BD47 /* BookmarkDVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD10D9E1F83D4E20072BD47 /* BookmarkDVO.swift */; };
+		8AD10DA11F83E4D90072BD47 /* BookmarkVVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD10DA01F83E4D90072BD47 /* BookmarkVVO.swift */; };
+		8AD10DA41F83E5BC0072BD47 /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD10DA31F83E5BC0072BD47 /* BookmarkCell.swift */; };
+		8ADC69DD1F86B79C00833748 /* BookmarkDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC69DC1F86B79C00833748 /* BookmarkDetail.storyboard */; };
+		8ADC69DF1F86B8B600833748 /* BookmarkDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC69DE1F86B8B600833748 /* BookmarkDetailVC.swift */; };
+		8ADC69E11F86BB9A00833748 /* BookmarkDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC69E01F86BB9A00833748 /* BookmarkDetailCell.swift */; };
+		8AE6FF981F83F69100D51B59 /* AddBookmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE6FF971F83F69100D51B59 /* AddBookmark.storyboard */; };
 		E3E89F94E0F380F6FE890D0F /* Pods_Bookmarkd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEFB2D3D7213E9F5699CFF0 /* Pods_Bookmarkd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8A1164571F7C4121004D387B /* Embed Frameworks */ = {
+		8A9B4E581F7EADAE00F48435 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8A1164561F7C4121004D387B /* SPRingboard.framework in Embed Frameworks */,
+				8A9B4E571F7EADAE00F48435 /* SPRingboard.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,9 +67,34 @@
 		8A1164491F7C4073004D387B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A11644C1F7C4073004D387B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A11644E1F7C4073004D387B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A1164541F7C4121004D387B /* SPRingboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SPRingboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1274F91F857E63009CB042 /* AddBookmarkEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookmarkEditVC.swift; sourceTree = "<group>"; };
+		8A1CC1841F85702E00B14129 /* AddBookmarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookmarkVC.swift; sourceTree = "<group>"; };
+		8A1CC1861F85714F00B14129 /* AddBookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookmarkCell.swift; sourceTree = "<group>"; };
+		8A43572F1F82990000A44624 /* AuthenticationDVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDVO.swift; sourceTree = "<group>"; };
+		8A4357321F8299FB00A44624 /* AuthenticationVVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationVVO.swift; sourceTree = "<group>"; };
+		8A4357351F829AA100A44624 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		8A55D03F1F87DCCF007C081D /* UpdateBookmarkCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateBookmarkCommand.swift; sourceTree = "<group>"; };
+		8A55D0411F87DE33007C081D /* UpdateBookmarkDVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateBookmarkDVO.swift; sourceTree = "<group>"; };
 		8A5D23F41F7D4040000E8338 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8A5D23F71F7D408E000E8338 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		8A6B737D1F82A76C00D83F3A /* Bookmarks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bookmarks.storyboard; sourceTree = "<group>"; };
+		8A6B737F1F82E1E300D83F3A /* FetchBookmarksCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBookmarksCommand.swift; sourceTree = "<group>"; };
+		8A6B73811F82E30100D83F3A /* BookmarksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksVC.swift; sourceTree = "<group>"; };
+		8A8291571F87DF5C00EAA523 /* UpdateBookmarkVVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateBookmarkVVO.swift; sourceTree = "<group>"; };
+		8A9B4E531F7E9EB700F48435 /* BookmarkdClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkdClient.swift; sourceTree = "<group>"; };
+		8A9B4E551F7EADAE00F48435 /* SPRingboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SPRingboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AC128EE1F7D540C003BF8E4 /* SignInCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCommand.swift; sourceTree = "<group>"; };
+		8AC720101F867B84006666FE /* AddBookmarkCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookmarkCommand.swift; sourceTree = "<group>"; };
+		8AC720121F867C63006666FE /* AddBookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookmark.swift; sourceTree = "<group>"; };
+		8ACA019D1F87E6650025C5EA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8AD10D9C1F82E60E0072BD47 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		8AD10D9E1F83D4E20072BD47 /* BookmarkDVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkDVO.swift; sourceTree = "<group>"; };
+		8AD10DA01F83E4D90072BD47 /* BookmarkVVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkVVO.swift; sourceTree = "<group>"; };
+		8AD10DA31F83E5BC0072BD47 /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
+		8ADC69DC1F86B79C00833748 /* BookmarkDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookmarkDetail.storyboard; sourceTree = "<group>"; };
+		8ADC69DE1F86B8B600833748 /* BookmarkDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkDetailVC.swift; sourceTree = "<group>"; };
+		8ADC69E01F86BB9A00833748 /* BookmarkDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkDetailCell.swift; sourceTree = "<group>"; };
+		8AE6FF971F83F69100D51B59 /* AddBookmark.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddBookmark.storyboard; sourceTree = "<group>"; };
 		A608834C26E6788ECD49F7B8 /* Pods-Bookmarkd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookmarkd.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bookmarkd/Pods-Bookmarkd.release.xcconfig"; sourceTree = "<group>"; };
 		E46CB1AAE1FB17B6392E1F61 /* Pods-Bookmarkd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookmarkd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bookmarkd/Pods-Bookmarkd.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A1164551F7C4121004D387B /* SPRingboard.framework in Frameworks */,
+				8A9B4E561F7EADAE00F48435 /* SPRingboard.framework in Frameworks */,
 				E3E89F94E0F380F6FE890D0F /* Pods_Bookmarkd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +115,7 @@
 		8A1164361F7C4073004D387B = {
 			isa = PBXGroup;
 			children = (
-				8A1164541F7C4121004D387B /* SPRingboard.framework */,
+				8A9B4E551F7EADAE00F48435 /* SPRingboard.framework */,
 				8A1164411F7C4073004D387B /* Bookmarkd */,
 				8A1164401F7C4073004D387B /* Products */,
 				EB0036FB16696CFE44E336F2 /* Pods */,
@@ -94,14 +144,55 @@
 				8A1164491F7C4073004D387B /* Assets.xcassets */,
 				8A11644B1F7C4073004D387B /* LaunchScreen.storyboard */,
 				8A11644E1F7C4073004D387B /* Info.plist */,
+				8ACA019D1F87E6650025C5EA /* Constants.swift */,
 			);
 			path = Bookmarkd;
+			sourceTree = "<group>";
+		};
+		8A43572D1F8298A800A44624 /* Connectors */ = {
+			isa = PBXGroup;
+			children = (
+				8A9B4E531F7E9EB700F48435 /* BookmarkdClient.swift */,
+			);
+			path = Connectors;
+			sourceTree = "<group>";
+		};
+		8A43572E1F8298C500A44624 /* DomainModels */ = {
+			isa = PBXGroup;
+			children = (
+				8A43572F1F82990000A44624 /* AuthenticationDVO.swift */,
+				8AD10D9E1F83D4E20072BD47 /* BookmarkDVO.swift */,
+				8A55D0411F87DE33007C081D /* UpdateBookmarkDVO.swift */,
+			);
+			path = DomainModels;
+			sourceTree = "<group>";
+		};
+		8A4357311F8299E900A44624 /* ValueObjects */ = {
+			isa = PBXGroup;
+			children = (
+				8A4357321F8299FB00A44624 /* AuthenticationVVO.swift */,
+				8AD10DA01F83E4D90072BD47 /* BookmarkVVO.swift */,
+				8A8291571F87DF5C00EAA523 /* UpdateBookmarkVVO.swift */,
+			);
+			path = ValueObjects;
+			sourceTree = "<group>";
+		};
+		8A4357341F829A9200A44624 /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				8A4357351F829AA100A44624 /* Credentials.swift */,
+				8AD10D9C1F82E60E0072BD47 /* Authentication.swift */,
+				8AC720121F867C63006666FE /* AddBookmark.swift */,
+			);
+			path = RequestModels;
 			sourceTree = "<group>";
 		};
 		8A5D23F01F7D3FCD000E8338 /* ViewTier */ = {
 			isa = PBXGroup;
 			children = (
+				8A4357311F8299E900A44624 /* ValueObjects */,
 				8A5D23F31F7D3FFA000E8338 /* ViewControllers */,
+				8AD10DA21F83E59A0072BD47 /* Views */,
 			);
 			path = ViewTier;
 			sourceTree = "<group>";
@@ -109,6 +200,7 @@
 		8A5D23F11F7D3FD5000E8338 /* MiddleTier */ = {
 			isa = PBXGroup;
 			children = (
+				8AC128ED1F7D53D5003BF8E4 /* Commands */,
 			);
 			path = MiddleTier;
 			sourceTree = "<group>";
@@ -116,6 +208,9 @@
 		8A5D23F21F7D3FE0000E8338 /* DomainTier */ = {
 			isa = PBXGroup;
 			children = (
+				8A4357341F829A9200A44624 /* RequestModels */,
+				8A43572E1F8298C500A44624 /* DomainModels */,
+				8A43572D1F8298A800A44624 /* Connectors */,
 			);
 			path = DomainTier;
 			sourceTree = "<group>";
@@ -123,6 +218,10 @@
 		8A5D23F31F7D3FFA000E8338 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8A1274F91F857E63009CB042 /* AddBookmarkEditVC.swift */,
+				8A1CC1841F85702E00B14129 /* AddBookmarkVC.swift */,
+				8ADC69DE1F86B8B600833748 /* BookmarkDetailVC.swift */,
+				8A6B73811F82E30100D83F3A /* BookmarksVC.swift */,
 				8A5D23F41F7D4040000E8338 /* LoginVC.swift */,
 			);
 			path = ViewControllers;
@@ -131,9 +230,33 @@
 		8A5D23F61F7D4074000E8338 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				8AE6FF971F83F69100D51B59 /* AddBookmark.storyboard */,
+				8ADC69DC1F86B79C00833748 /* BookmarkDetail.storyboard */,
+				8A6B737D1F82A76C00D83F3A /* Bookmarks.storyboard */,
 				8A5D23F71F7D408E000E8338 /* Login.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8AC128ED1F7D53D5003BF8E4 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				8AC720101F867B84006666FE /* AddBookmarkCommand.swift */,
+				8A6B737F1F82E1E300D83F3A /* FetchBookmarksCommand.swift */,
+				8AC128EE1F7D540C003BF8E4 /* SignInCommand.swift */,
+				8A55D03F1F87DCCF007C081D /* UpdateBookmarkCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		8AD10DA21F83E59A0072BD47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8AD10DA31F83E5BC0072BD47 /* BookmarkCell.swift */,
+				8A1CC1861F85714F00B14129 /* AddBookmarkCell.swift */,
+				8ADC69E01F86BB9A00833748 /* BookmarkDetailCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D846DE78EDC4751FCD022C49 /* Frameworks */ = {
@@ -166,7 +289,7 @@
 				8A11643D1F7C4073004D387B /* Resources */,
 				1A4AD2997BDAE4BF27EBED9F /* [CP] Embed Pods Frameworks */,
 				30C5D1473F5B1BB8F7E8059A /* [CP] Copy Pods Resources */,
-				8A1164571F7C4121004D387B /* Embed Frameworks */,
+				8A9B4E581F7EADAE00F48435 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,10 +339,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE6FF981F83F69100D51B59 /* AddBookmark.storyboard in Resources */,
+				8ADC69DD1F86B79C00833748 /* BookmarkDetail.storyboard in Resources */,
 				8A5D23F81F7D408E000E8338 /* Login.storyboard in Resources */,
 				8A11644D1F7C4073004D387B /* LaunchScreen.storyboard in Resources */,
 				8A11644A1F7C4073004D387B /* Assets.xcassets in Resources */,
 				8A1164481F7C4073004D387B /* Main.storyboard in Resources */,
+				8A6B737E1F82A76C00D83F3A /* Bookmarks.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,8 +405,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A1164451F7C4073004D387B /* ViewController.swift in Sources */,
+				8AC720111F867B84006666FE /* AddBookmarkCommand.swift in Sources */,
+				8AD10DA41F83E5BC0072BD47 /* BookmarkCell.swift in Sources */,
+				8AC128EF1F7D540C003BF8E4 /* SignInCommand.swift in Sources */,
+				8A1CC1851F85702E00B14129 /* AddBookmarkVC.swift in Sources */,
+				8A4357361F829AA100A44624 /* Credentials.swift in Sources */,
+				8A8291581F87DF5C00EAA523 /* UpdateBookmarkVVO.swift in Sources */,
 				8A1164431F7C4073004D387B /* AppDelegate.swift in Sources */,
+				8A6B73801F82E1E300D83F3A /* FetchBookmarksCommand.swift in Sources */,
+				8A4357301F82990000A44624 /* AuthenticationDVO.swift in Sources */,
+				8A6B73821F82E30100D83F3A /* BookmarksVC.swift in Sources */,
+				8A4357331F8299FB00A44624 /* AuthenticationVVO.swift in Sources */,
+				8ADC69DF1F86B8B600833748 /* BookmarkDetailVC.swift in Sources */,
 				8A5D23F51F7D4040000E8338 /* LoginVC.swift in Sources */,
+				8AD10DA11F83E4D90072BD47 /* BookmarkVVO.swift in Sources */,
+				8A9B4E541F7E9EB700F48435 /* BookmarkdClient.swift in Sources */,
+				8AD10D9D1F82E60E0072BD47 /* Authentication.swift in Sources */,
+				8A55D0401F87DCCF007C081D /* UpdateBookmarkCommand.swift in Sources */,
+				8AC720131F867C63006666FE /* AddBookmark.swift in Sources */,
+				8ACA019E1F87E6650025C5EA /* Constants.swift in Sources */,
+				8A55D0421F87DE33007C081D /* UpdateBookmarkDVO.swift in Sources */,
+				8AD10D9F1F83D4E20072BD47 /* BookmarkDVO.swift in Sources */,
+				8A1274FA1F857E63009CB042 /* AddBookmarkEditVC.swift in Sources */,
+				8A1CC1871F85714F00B14129 /* AddBookmarkCell.swift in Sources */,
+				8ADC69E11F86BB9A00833748 /* BookmarkDetailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,7 +33,7 @@ import Foundation
 fileprivate let sharedPrivateQueue = DispatchQueue(label: "sprcore.deferredresult.shared", qos: .utility)
 
 
-public class DeferredResult<T>: FutureResult<T> {
+public final class DeferredResult<T>: FutureResult<T> {
     
     public enum Error: Swift.Error {
         case completionHandlerMissingValueAndError

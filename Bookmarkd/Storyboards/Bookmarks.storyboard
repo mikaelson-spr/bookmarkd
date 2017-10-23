@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DJC-qI-FzS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bookmarks-->
+        <scene sceneID="buD-qS-EYs">
+            <objects>
+                <tableViewController id="Ywz-MH-1gY" customClass="BookmarksVC" customModule="Bookmarkd" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="etP-xr-yP8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BookmarkCell" id="TDm-JB-sb8" customClass="BookmarkCell" customModule="Bookmarkd" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TDm-JB-sb8" id="tzM-cF-vLA">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLr-nG-o0b">
+                                            <rect key="frame" x="18" y="9.5" width="37.5" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="dbK-kl-SKy"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="mLr-nG-o0b" firstAttribute="leading" secondItem="tzM-cF-vLA" secondAttribute="leadingMargin" constant="10" id="4CQ-ge-kXe"/>
+                                        <constraint firstItem="mLr-nG-o0b" firstAttribute="centerY" secondItem="tzM-cF-vLA" secondAttribute="centerY" id="J0f-kj-Izh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="mLr-nG-o0b" id="rjc-l7-b8R"/>
+                                    <segue destination="ejU-FZ-EbF" kind="show" identifier="bookmarksToBookmarkDetail" id="cso-7R-Bc2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ywz-MH-1gY" id="HI6-9i-BmO"/>
+                            <outlet property="delegate" destination="Ywz-MH-1gY" id="82e-ud-73u"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Bookmarks" id="xA8-uF-hul">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qG6-bb-GUE">
+                            <color key="tintColor" red="0.4115395778" green="0.71220858129999998" blue="0.45659479819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="Rpt-iZ-qJr" kind="show" identifier="bookmarksToAddBookmark" id="JvI-49-wwm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ev-48-ktz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55.200000000000003" y="-1.3493253373313345"/>
+        </scene>
+        <!--BookmarkDetail-->
+        <scene sceneID="LG1-jF-OgZ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="BookmarkDetail" storyboardName="BookmarkDetail" id="ejU-FZ-EbF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWc-Cn-Rad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="-96"/>
+        </scene>
+        <!--AddBookmark-->
+        <scene sceneID="IVc-s8-l8a">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddBookmark" id="Rpt-iZ-qJr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bY3-iU-BnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tj2-Ka-DtJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DJC-qI-FzS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xcf-DW-wb5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ywz-MH-1gY" kind="relationship" relationship="rootViewController" id="8G4-3S-Ovx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tEy-gg-Hoo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-801" y="-1"/>
+        </scene>
+    </scenes>
+</document>

@@ -26,7 +26,7 @@ import Foundation
 ///
 /// This adapter is useful for providing fixture data and when handling a data
 /// storage technology that lacks its own `ObjectDataSource` implementation.
-open class ArrayObjectDataSource<ElementType>: ObjectDataSource<ElementType> {
+public final class ArrayObjectDataSource<ElementType>: ObjectDataSource<ElementType> {
 
     private let objects: [ElementType]
     private let sectionName: String?

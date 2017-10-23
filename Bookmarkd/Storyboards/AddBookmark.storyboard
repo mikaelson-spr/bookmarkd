@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1tU-wb-hTC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add BookmarkVC-->
+        <scene sceneID="8II-w5-ZTj">
+            <objects>
+                <tableViewController id="1tU-wb-hTC" customClass="AddBookmarkVC" customModule="Bookmarkd" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hvi-aP-9dN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AddBookmarkCell" id="sIU-YH-R2Z" customClass="AddBookmarkCell" customModule="Bookmarkd" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sIU-YH-R2Z" id="gqd-Jb-mbJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FyT-EN-2sT">
+                                            <rect key="frame" x="23" y="23" width="0.0" height="53.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Test Long name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPP-hD-FmO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <color key="textColor" red="0.27882223616394353" green="0.56280199369512673" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHS-HJ-3TM">
+                                                    <rect key="frame" x="0.0" y="32" width="0.0" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.33333333333333331" green="0.33517278439153442" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="FyT-EN-2sT" firstAttribute="centerY" secondItem="gqd-Jb-mbJ" secondAttribute="centerY" id="63p-jC-ZsN"/>
+                                        <constraint firstItem="FyT-EN-2sT" firstAttribute="top" secondItem="gqd-Jb-mbJ" secondAttribute="topMargin" constant="15" id="FR7-vI-Ub5"/>
+                                        <constraint firstItem="FyT-EN-2sT" firstAttribute="leading" secondItem="gqd-Jb-mbJ" secondAttribute="leadingMargin" constant="15" id="Wkd-7S-F2z"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="FyT-EN-2sT" secondAttribute="bottom" constant="15" id="b4e-nJ-F4K"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="infoLabel" destination="NHS-HJ-3TM" id="7S0-J3-M6v"/>
+                                    <outlet property="titleLabel" destination="KPP-hD-FmO" id="751-De-oqC"/>
+                                    <segue destination="9LO-eh-Y71" kind="show" id="Ird-u5-bBG"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1tU-wb-hTC" id="K1A-Qk-jgZ"/>
+                            <outlet property="delegate" destination="1tU-wb-hTC" id="33W-25-yl1"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="SFl-lA-7Qa">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="dNK-5W-TMc">
+                            <color key="tintColor" red="0.4115395778" green="0.71220858129999998" blue="0.45659479819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="1tU-wb-hTC" id="OMW-wk-OoX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="saveBarButton" destination="dNK-5W-TMc" id="xBc-8c-n37"/>
+                        <segue destination="HH2-Jr-rCQ" kind="unwind" identifier="unwindToBookmarksVC" unwindAction="unwindToBookmarksVCWithSegue:" id="QGf-wM-yCG"/>
+                        <segue destination="HH2-Jr-rCQ" kind="unwind" identifier="unwindToBookmarkDetailVC" unwindAction="unwindToBookmarkDetailVCWithSegue:" id="6Lb-oQ-z0w"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rcc-5g-oGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="HH2-Jr-rCQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="93"/>
+        </scene>
+        <!--Add Bookmark EditVC-->
+        <scene sceneID="Xhy-zU-cfU">
+            <objects>
+                <viewController id="9LO-eh-Y71" customClass="AddBookmarkEditVC" customModule="Bookmarkd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OJb-hM-VRv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiW-rm-EkJ" userLabel="Container View">
+                                <rect key="frame" x="15" y="40" width="345" height="181"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sP8-LG-3sb">
+                                        <rect key="frame" x="5" y="5" width="335" height="171"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.4115395778" green="0.71220858129999998" blue="0.45659479819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="sP8-LG-3sb" firstAttribute="leading" secondItem="oiW-rm-EkJ" secondAttribute="leading" constant="5" id="0C7-1m-962"/>
+                                    <constraint firstAttribute="bottom" secondItem="sP8-LG-3sb" secondAttribute="bottom" constant="5" id="6zG-ha-yqY"/>
+                                    <constraint firstAttribute="trailing" secondItem="sP8-LG-3sb" secondAttribute="trailing" constant="5" id="hnW-hS-vEN"/>
+                                    <constraint firstItem="sP8-LG-3sb" firstAttribute="top" secondItem="oiW-rm-EkJ" secondAttribute="top" constant="5" id="lpg-YT-IHb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oiW-rm-EkJ" firstAttribute="top" secondItem="hSt-qh-Dk2" secondAttribute="top" constant="20" id="4YC-P8-79F"/>
+                            <constraint firstItem="oiW-rm-EkJ" firstAttribute="height" secondItem="hSt-qh-Dk2" secondAttribute="height" multiplier="30%" id="VDW-vU-zCM"/>
+                            <constraint firstItem="oiW-rm-EkJ" firstAttribute="leading" secondItem="hSt-qh-Dk2" secondAttribute="leading" constant="15" id="WXO-jg-bOT"/>
+                            <constraint firstItem="hSt-qh-Dk2" firstAttribute="trailing" secondItem="oiW-rm-EkJ" secondAttribute="trailing" constant="15" id="ewr-S9-mq7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hSt-qh-Dk2"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="containerView" destination="oiW-rm-EkJ" id="l4J-vj-wFK"/>
+                        <outlet property="editTextView" destination="sP8-LG-3sb" id="5ET-LM-Rxa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53m-tL-EC7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="91.304347826086968"/>
+        </scene>
+    </scenes>
+</document>

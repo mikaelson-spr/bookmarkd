@@ -37,7 +37,7 @@ import Dispatch
 /// to use, maintain, and extend.) 
 /// 
 /// Subclasses must be thread-safe.
-public class Future<Value> {
+open class Future<Value> {
     
     /// An enumeration representing the possible states for a `Future`.
     ///
@@ -50,6 +50,13 @@ public class Future<Value> {
         // The future has not yet been filled.
         case unfilled
     }
+    
+    /// Public initializer for subclasses to call. By default, the initializer
+    /// would be `internal`.
+    ///
+    /// In _The Swift Programming Language (Swift 4)_ book, see Access Control
+    /// > Initializers > Default Initializers for more information.
+    public init() { }
     
     /// Attach a handler to be dispatched on the provided queue when the future
     /// is filled with a value. If the receiver is already filled, the handler
@@ -69,6 +76,6 @@ public class Future<Value> {
     ///     - queue: The queue on which the handler will be asynchronously
     ///       dispatched. Defaults to the main queue.
     ///     - handler: A closure to be dispatched with the filled value.
-    public func then(upon queue: DispatchQueue = .main, run handler: @escaping (Value) -> Void) { }
+    open func then(upon queue: DispatchQueue = .main, run handler: @escaping (Value) -> Void) { }
     
 }

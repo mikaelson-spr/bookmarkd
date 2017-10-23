@@ -61,6 +61,11 @@ open class ObjectDataSource<ObjectType> {
         case objectUnavailable(IndexPath)
     }
     
+    /// Public initializer for subclasses to call. By default, the initializer
+    /// would be `internal`.
+    ///
+    /// In _The Swift Programming Language (Swift 4)_ book, see Access Control
+    /// > Initializers > Default Initializers for more information.
     public init() { }
     
     /// Returns the number of objects (rows) in the section.
